@@ -1,0 +1,539 @@
+* {
+    margin: 0%;
+    padding: 0ch;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+.backgroundimg1{
+    width: 200vh;
+    height: 100vh;
+}
+.backgroundimg{
+    background-size: cover;
+    height: 95vh;
+    width: 100vw;
+}
+.background1 {
+    position: absolute;
+    align-items: center;
+    opacity: 10%;
+}
+
+.background2 {
+    position: absolute;
+    z-index: -1;
+    margin-top: 10px;
+    height: 200px;
+    opacity: 10%;
+}
+#background3{
+    position: absolute;
+    z-index: -1;
+    margin-top: 10px;
+    height: 100vh;
+    opacity: 80%;
+}
+#header {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo {
+    width: 440px;
+}
+
+.logo2 {
+    width: 100vmax;
+    margin-top: -5%;
+    height: 500px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px, 20px;
+}
+
+.ancor1 {
+    margin: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    font-size: 18px;
+}
+
+.ancor1::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #00eeff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.ancor1:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 15%;
+    margin-left: 10%;
+    font-size: 30px;
+}
+
+.header-text h1 span {
+    color: #00eeff;
+}
+
+
+
+
+#about {
+    color: solid darkgray;
+    margin-top: 5%;
+}
+
+#row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.about-col-1 {
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    width: 48%;
+    border-radius: 20px;
+}
+
+.about-col-2 {
+    height: 100%;
+    border-radius: 20px;
+    width: 48%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.about-col-1 p {
+    margin: 15px;
+}
+
+.about-col-2 p {
+    margin: 15px;
+}
+
+.tab-list {
+    display: flex;
+}
+
+.tab-list p {
+    font-size: 15px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00eeff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 15px;
+
+}
+
+.tab-contents ul li span {
+    color: #00eeff;
+    font-size: 14px;
+}
+
+.tab-contents .tabone {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-contents ul div {
+    margin: 0 1%;
+}
+
+.tealtxt {
+    color: #00eeff;
+}
+
+.cred {
+    text-decoration: none;
+    color: rgb(173, 176, 180);
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+.projects {
+    margin-top: 2%;
+}
+
+.projects .container {
+    margin-top: 10%;
+}
+
+.projects .container h1 {
+    font-size: 40px;
+}
+
+.projects .container h1 span {
+    color: #00eeff;
+
+}
+
+.projectstab {
+    display: flex;
+    /* margin-top: 5%; */
+    padding: 10 5%;
+    z-index: -1;
+    flex-direction: row;
+}
+
+.pro {
+    margin: 20px;
+    margin-left: 3%;
+    width: 45%;
+    height: 80vh;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 0;
+    background-image: linear-gradient(black, rgba(0, 225, 255, 0.171));
+}
+
+.pro:hover #webdevimg {
+    margin-left: 25%;
+    margin-top: 8%;
+    width: 250px;
+    height: 200px;
+}
+
+.pro:hover #gameimg {
+    margin-left: 23%;
+    margin-top: 8%;
+    width: 300px;
+    height: 200px;
+}
+
+#webdevimg {
+    border-radius: 10px;
+    /* margin-left: 25%; */
+    margin-left: 8%;
+    margin-top: 12%;
+    /* width: 250px; */
+    width: 400px;
+    transition: 1s;
+    /* height: 200px; */
+    height: 300px;
+
+}
+
+#gameimg {
+    border-radius: 10px;
+    /* margin-left: 23%; */
+    margin-left: 8%;
+    margin-top: 12%;
+    /* width: 300px; */
+    width: 400px;
+    height: 300px;
+    /* height: 200px; */
+    transition: 1s;
+}
+
+#gameimg:hover {
+    border-radius: 10px;
+
+}
+
+.projectstab span {
+    color: #00eeff;
+    font-size: 30px;
+}
+
+.projectstab p {
+    font-size: 16px;
+    opacity: 0%;
+    display: none;
+}
+
+.projectstab h3 {
+    font-size: 16px;
+    opacity: 0%;
+    display: none;
+}
+
+.pro:hover p {
+    display: block;
+    opacity: 100%;
+    transition-delay: 1s;
+}
+
+.pro:hover h3 {
+    display: block;
+    opacity: 100%;
+    transition: 1s;
+}
+
+.projectstab pro image {
+    width: 500px;
+    height: 400;
+}
+
+
+#coninfoimg {
+    position: absolute;
+    z-index: -1;
+    margin-top: 10%;
+    margin-left: 10%;
+    opacity: 15%;
+    width: 1000px;
+    /* height: 95vh; */
+
+}
+
+#contact {
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+}
+
+#divide {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.coninfo {
+    margin: 20px;
+    margin-left: 3%;
+    width: 45%;
+    height: 80vh;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 0;
+    /* background-color: rgba(255, 255, 255, 0.044); */
+}
+
+#contact-left h1 {
+    margin-top: 35%;
+    margin-left: 10%;
+    font-size: 50px;
+}
+
+#contact-left p {
+    margin-top: 2%;
+    margin-left: 29%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contact-left span {
+    color:#00eeff;
+}
+
+#contact-left p img {
+    width: 24px;
+    position: absolute;
+    padding: 1px 2;
+    left: 34vh;
+    background-color: aliceblue;
+    border-radius: 70px;
+    color: #00eeff;
+}
+
+#button1 {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #00eeff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #00eeff;
+    background-color: aliceblue;
+    position: absolute;
+    margin: 2%;
+    left: 38vh;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+#button1:hover {
+    padding: 15px;
+    margin: 1.8%;
+    border-radius: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #00eeff;
+    color: white;
+    cursor: pointer;
+
+}
+
+#contact-right {
+    margin-top: 10%;
+}
+
+
+#contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: rgba(113, 113, 113, 0.29);
+    padding: 15px;
+    margin-top: 20px;
+    color: rgb(71, 218, 237);
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+#button2 {
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #00eeff;
+    background-color: aliceblue;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+#button2:hover {
+    margin-top: 23px;
+    padding: 14px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #00eeff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+
+#socialmedia {
+    width: 500px;
+    margin-left: 38%;
+    margin-top: -5%;
+    margin-bottom: 10%;
+}
+
+#socialmedia ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#socialmedia ul li {
+    list-style: none;
+    font-size: 40px;
+
+}
+
+#socialmedia ul li a i {
+    padding: 20px;
+    transition: .5s;
+    color: #939090af;
+}
+
+#socialmedia ul li a i:hover {
+    padding: 20px;
+    font-size: 45px;
+    color: #00f7ffaf;
+}
+
+#socialmedia #socialnames li {
+    font-size: 12px;
+    position: absolute;
+    padding-left: 21px;
+}
+
+#socialnames {
+    margin-top: -14px;
+}
+
+#insta {
+    margin-left: -1.5vh;
+}
+
+#git {
+    margin-left: 11.5vh;
+}
+
+#link {
+    margin-left: 23.5vh;
+}
+
+#twit {
+    margin-left: 35vh;
+}
